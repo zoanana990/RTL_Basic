@@ -13,16 +13,17 @@ use IEEE.numeric_std.all;
 -- Entity declaration
 entity Shift_Reg is
 port(
-    A       := out std_logic;
-    B       := out std_logic;
-    C       := out std_logic;
-    D       := out std_logic;
-    data_in := in  std_logic;
-    reset   := in  std_logic;
-    clk     := in  std_logic);
+    A       : out std_logic;
+    B       : out std_logic;
+    C       : out std_logic;
+    D       : out std_logic;
+    data_in : in  std_logic;
+    reset   : in  std_logic;
+    clk     : in  std_logic);
+end Shift_Reg;
 
 -- Architecture
-architecture behavir of Shift_Reg is
+architecture behavior of Shift_Reg is
 
 -- Defined Signals
 signal A_reg, B_reg, C_reg, D_reg : std_logic := '0';

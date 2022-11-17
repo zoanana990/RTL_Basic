@@ -9,18 +9,20 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.All;
 use IEEE.numeric_std.all;
 
+entity test_Shift_Reg is
+end;
 
-entity test in test_Shift_Reg is
+architecture test of test_Shift_Reg is
 
 component Shift_Reg
 port(
-    A       := out std_logic;
-    B       := out std_logic;
-    C       := out std_logic;
-    D       := out std_logic;
-    data_in := in  std_logic;
-    reset   := in  std_logic;
-    clk     := in  std_logic);
+    A       : out std_logic;
+    B       : out std_logic;
+    C       : out std_logic;
+    D       : out std_logic;
+    data_in : in  std_logic;
+    reset   : in  std_logic;
+    clk     : in  std_logic);
 end component;
 
 signal data_in      : std_logic := '0';
